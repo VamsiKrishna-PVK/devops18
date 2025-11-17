@@ -23,4 +23,12 @@ status = "Enabled"
 }
 }
 
+terraform {
+backend "s3" {
+region = "eu-north-1"
+bucket = "vamsikrishna-monolithic"
+key = "prod/terraform.tfstate"
+}
+}
+
 
